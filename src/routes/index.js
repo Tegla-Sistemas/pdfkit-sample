@@ -6,7 +6,7 @@ module.exports.register = async server => {
     // register api routes
     await api.register( server );
         
-    server.get('/', (req, res) => res.json({ message: 'Tegla Administration API is active.' }));
+    server.get('/', (req, res) => res.json({ message: 'Tegla PDF-KIT API is active.' }));
 
     server.post('/logout', async function(req, res) {
         // res.json({ auth: false, token: null });
